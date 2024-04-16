@@ -22,7 +22,7 @@
           </div>
           <div class="w-1/2 flex justify-center">
             <img
-              src="/assets/images/ringwithcircles.jpg"
+              src="/assets/images/ringwithcircles-removebg-preview.png"
               alt="crowdfunding project"
             />
           </div>
@@ -189,6 +189,7 @@
         </div>
         <div class="w-8/12 mt-16">
           <h2 class="text-3xl text-gray-900 font-light">
+            Testimoninal
  <br />
 
           </h2>

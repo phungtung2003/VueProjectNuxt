@@ -9,7 +9,7 @@
           </p>
         </div>
         <div class="sm:w-1/4 h-auto">
-          <div class="mb-8 font-bold"></div>
+          <div class="mb-8 font-bold">Resource</div>
           <ul class="font-light">
             <li class="mb-3"></li>
             <li class="mb-3"></li>
@@ -18,7 +18,16 @@
           </ul>
         </div>
         <div class="sm:w-1/4 h-auto">
-          <div class="mb-8 font-bold"></div>
+          <div class="mb-8 font-bold">Legal Stuff</div>
+          <ul class="font-light">
+            <li class="mb-3"></li>
+            <li class="mb-3"></li>
+            <li class="mb-3"></li>
+            <li class="mb-3"></li>
+          </ul>
+        </div>
+        <div class="sm:w-1/4 h-auto">
+          <div class="mb-8 font-bold">Office</div>
           <ul class="font-light">
             <li class="mb-3"></li>
             <li class="mb-3"></li>
