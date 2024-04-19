@@ -65,6 +65,25 @@
           My Account
         </NuxtLink>
       </li>
+      <!-- Add dark mode toggle button -->
+      <li>
+        <button @click="toggleDarkMode" class="dark-mode-toggle focus:outline-none">
+          <svg
+            class="w-6 h-6 text-white fill-current"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              v-if="!isDarkMode"
+              d="M2.5 2.5v19h19v-19h-19zm3 3h13v13h-13v-13z"
+            />
+            <path
+              v-else
+              d="M13 2.5v13h-13v-13h13zm-13 16.5v-13h13v13h-13z"
+            />
+          </svg>
+        </button>
+      </li>
     </ul>
   </header>
 </template>
@@ -73,12 +92,17 @@
 export default {
   data() {
     return {
-      isDropdownOpen: false
+      isDropdownOpen: false,
+      isDarkMode: false
     };
   },
   methods: {
     toggleDropdown() {
       this.isDropdownOpen = !this.isDropdownOpen;
+    },
+    toggleDarkMode() {
+      this.isDarkMode = !this.isDarkMode;
+      document.body.classList.toggle('dark-mode'); // Toggle dark mode class on body
     }
   }
 };
@@ -116,6 +140,41 @@ export default {
 
 .dropdown-content.show {
   display: block;
+  .dark-mode .dropdown-content {
+  background-color: #333;
+}
+
+.dark-mode .dropdown-content a {
+  color: white;
+}
+
+.dark-mode .dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dark-mode .text-white {
+  color: white;
+}
+
+.dark-mode .hover\:text-teal-500:hover {
+  color: #4dc0b5;
+}
+
+.dark-mode .bg-transparent {
+  background-color: transparent;
+}
+
+.dark-mode .hover\:bg-white:hover {
+  background-color: white;
+}
+
+.dark-mode .border-white {
+  border-color: white;
+}
+
+.dark-mode .hover\:bg-opacity-25:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
 }
 
 @media (max-width: 768px) {

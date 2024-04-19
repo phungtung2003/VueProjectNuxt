@@ -148,3 +148,76 @@ footer {
   background-position: top right;
   background-repeat: no-repeat;
 }
+
+.testimonial-box {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.testimonial-content {
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 18px;
+  color: #333;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.rating-stars {
+  font-size: 24px;
+  color: gold;
+}
+
+.dark-mode .dropdown-content a {
+  color: white;
+}
+
+.dark-mode .dropdown-content a:hover {
+  background-color: #555;
+}
+
+.dark-mode .text-white {
+  color: white;
+}
+
+.dark-mode .hover\:text-teal-500:hover {
+  color: #4dc0b5;
+}
+
+.dark-mode .bg-transparent {
+  background-color: transparent;
+}
+
+.dark-mode .hover\:bg-white:hover {
+  background-color: white;
+}
+
+.dark-mode .border-white {
+  border-color: white;
+}
+
+.dark-mode .hover\:bg-opacity-25:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+
